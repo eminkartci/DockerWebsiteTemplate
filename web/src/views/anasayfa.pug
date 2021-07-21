@@ -1,0 +1,489 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  meta(name='author' content='ThemeStarz')
+  link(href='assets/fonts/font-awesome.css' rel='stylesheet' type='text/css')
+  link(href='assets/fonts/elegant-fonts.css' rel='stylesheet' type='text/css')
+  link(href='https://fonts.googleapis.com/css?family=Lato:400,300,700,900' rel='stylesheet' type='text/css')
+  link(rel='stylesheet' href='assets/bootstrap/css/bootstrap.css' type='text/css')
+  link(rel='stylesheet' href='assets/css/zabuto_calendar.min.css' type='text/css')
+  link(rel='stylesheet' href='assets/css/bootstrap-select.min.css' type='text/css')
+  link(rel='stylesheet' href='assets/revolution/css/settings.css' type='text/css')
+  link(rel='stylesheet' href='assets/revolution/css/layers.css' type='text/css')
+  link(rel='stylesheet' href='assets/revolution/css/navigation.css' type='text/css')
+  link(rel='stylesheet' href='assets/css/style.css' type='text/css')
+  link(rel='stylesheet' href='assets/css/giris_kayitol.css' type='text/css')
+  link(rel='stylesheet' href='assets/css/kayitol.css' type='text/css')
+  title Su Koçluk Anasayfa
+
+
+.overlay
+.outer-wrapper
+  .page-wrapper
+    include ortak/baslik.pug
+    .hero-slider(style='min-height: 100px')
+      .rev-slider
+        ul
+          li
+            img(src='assets/images/slider/slider1.jpg' alt='')
+            .tp-caption(data-x='left' data-hoffset='0' data-y='top' data-voffset='150' data-transform_idle='o:1;' data-transform_in='x:50px;opacity:0;s:700;e:Power3.easeInOut;' data-start='500')
+              h4.opacity-40.text-color-white Ma Vita Akademi Karakter Analiz Programları
+            .tp-caption(data-x='left' data-hoffset='0' data-y='top' data-voffset='210' data-transform_idle='o:1;' data-transform_in='x:50px;opacity:0;s:700;e:Power3.easeInOut;' data-start='600')
+              h2.text-color-white
+                | Karakterini Keşfet
+                br
+                | Boşa Kürek Çekme
+            .tp-caption(data-x='left' data-hoffset='0' data-y='top' data-voffset='410' data-transform_idle='o:1;' data-transform_in='x:50px;opacity:0;s:700;e:Power3.easeInOut;' data-start='700')
+              a.link.underline.scroll(href='#five-steps-to-success') Randevu Al
+          li
+            img(src='assets/images/slider/slider2.jpg' alt='')
+            .tp-caption(data-x='left' data-hoffset='0' data-y='top' data-voffset='150' data-transform_idle='o:1;' data-transform_in='x:50px;opacity:0;s:700;e:Power3.easeInOut;' data-start='500')
+              h4.opacity-40.text-color-white Eğitim yolcuğunda yardımcı olalım
+            .tp-caption(data-x='left' data-hoffset='0' data-y='top' data-voffset='210' data-transform_idle='o:1;' data-transform_in='x:50px;opacity:0;s:700;e:Power3.easeInOut;' data-start='600')
+              h2.text-color-white
+                | Doğru adımlarla kariyerini başlat
+                br
+                | Daha başarılı ol
+            .tp-caption(data-x='left' data-hoffset='0' data-y='top' data-voffset='410' data-transform_idle='o:1;' data-transform_in='x:50px;opacity:0;s:700;e:Power3.easeInOut;' data-start='700')
+              a.link.underline.scroll(href='#five-steps-to-success') Danışmanlık Al
+    // /.hero-slider
+    .page-content
+      #features.block
+        .container
+          .row
+            .col-md-3.col-sm-6
+              .feature-box
+                i.icon_comment_alt
+                a(href='')
+                  h3 Yeni Fikirler
+                p Çalışma sürecinde farkında olmadığın yönlerini keşfedip severek çalışabilirsin.
+                a(href='')
+                  i.arrow_right
+              // / .feature-box
+            // / .col-md-3
+            .col-md-3.col-sm-6
+              .feature-box
+                i.icon_id-2
+                a(href='')
+                  h3 Başarı Hikayeleri
+                p Senin karakterine yakın insanların başarı öykülerini dinleyerek ilham al.
+                a(href='')
+                  i.arrow_right
+              // / .feature-box
+            // / .col-md-3
+            .col-md-3.col-sm-6
+              .feature-box
+                i.icon_briefcase
+                a(href='')
+                  h3 Kariyer Seçimi
+                p Karakter analizi sayesinde uygun olduğun mesleklere göz at.
+                a(href='')
+                  i.arrow_right
+              // / .feature-box
+            // / .col-md-3
+            .col-md-3.col-sm-6
+              .feature-box
+                i.icon_box-checked
+                a(href='')
+                  h3 Başarı Öykünü Paylaş
+                p Danışmanlıktan sonra senin gibi insanlara ilham kaynağı ol.
+                a(href='')
+                  i.arrow_right
+              // / .feature-box
+            // / .col-md-3
+          // / .row
+        // / .container
+        .bg.bg-color-neutral.opacity-50
+        // / .bg
+      // / .block
+      .block
+        .container
+          blockquote.center
+            p
+              | Aldığım danışmanlıkla beraber ne istediğimi daha iyi anladım ve çalışmak için motivasyonum oluştu.
+            footer Semanur Sancar
+          // / blockquote
+        // / .container
+        .bg.bg-color-neutral.opacity-20
+        // / .bg
+      // / .block
+      #about-me.block
+        .container
+          h2 Hakkımda
+          .row
+            .col-md-6.col-sm-6
+              .center
+                img.circle(src='assets/images/profilfoto.png' alt='')
+            .col-md-6.col-sm-6
+              h3.no-bottom-margin
+                strong Abuhayat Döşer
+              h5 Öğrenci Koçu
+              br
+              p
+                | Uzun yıllardır ilgilendiğim koçluk sürecinde, aldığım sertifikaların yanında tecrübelerim
+                | sayesinde danışanlarıma ön yargısız bir şekilde yardımcı oluyorum. Bu işi severek yapmamdaki
+                | en büyük sebep öğrencilerimin farkındalıklı ve başarılı bireyler olarak danışmanlık sürecini bitirebilmesidir.
+              .numbers
+                .row
+                  .col-md-4.col-sm-4
+                    .number
+                      figure 68
+                      aside Kişiye Mentörlük
+                    // / .number
+                  // / .col-md-4
+                  .col-md-4.col-sm-4
+                    .number
+                      figure 35
+                      aside Gönüllü Proje
+                    // / .number
+                  // / .col-md-4
+                  .col-md-4.col-sm-4
+                    .number
+                      figure 12
+                      aside Farklı Alanda Sertifika
+                    // / .number
+                  // / .col-md-4
+                // / .row
+              // / .numbers
+              hr
+              a.link.arrow(href='') Hakkımda Daha Fazlası
+            // / .col-sm-6
+          // / .row
+        // / .container
+      // / .block
+      .space
+      .container
+        .block.center
+          h2.half-bottom-margin
+            strong Etkinlikler ve Kampanyalar Hakkında Bilgi Al
+          .row
+            .col-md-6.col-sm-6.col-md-offset-3.col-sm-offset-3
+              form#form-daily-motivation
+                .form-group.input-group
+                  .form-status.text-color-white
+                  input.form-control(type='text' name='email' placeholder='E-mail Adresiniz')
+                  span.input-group-btn
+                    button.btn.btn-white(type='submit')
+                      i.arrow_right
+              // / form
+            // / .col-md-6
+          // / .row
+          .bg
+            img(src='assets/img/bg.jpg' alt='')
+          // / .bg
+        // / .block
+      // / .container
+      .space
+      #five-steps-to-success.block
+        .container
+          h2.center Başarının Beş Adımı
+          .steps
+            .step.width-20
+              figure
+                aside 1.
+                .bar.height-20
+                  .arrow
+              h3 Bizimle İletişime Geç
+              hr
+              p
+                | Danışmanlığın içeriği hakkında emin değilsen bilgi almaktan çekinme
+            // / .step
+            .step.width-20
+              figure
+                aside 2.
+                .bar.height-40
+                  .arrow
+              h3 Danışmanını Seç
+              hr
+              p.w
+                | Karakterine en uygun kişiden danışmanlık al
+            // / .step
+            .step.width-20
+              figure
+                aside 3.
+                .bar.height-60
+                  .arrow
+              h3 Karakter Analizi
+              hr
+              p
+                | Karakter analizi testlerine göre mesleğini ve alanını belirle
+            // / .step
+            .step.width-20
+              figure
+                aside 4.
+                .bar.height-80
+                  .arrow
+              h3 Çalışma Düzeni
+              hr
+              p
+                | Sana özel çalışma programına sahip ol
+            // / .step
+            .step.width-20
+              figure
+                aside 5.
+                .bar.height-100
+                  .arrow
+              h3 Sınav Teknikleri
+              hr
+              p
+                | Bilgilerini sınavlarda daha iyi kullanabilmek için derece öğrencilerinden taktik al
+            // / .step
+          // / .steps
+          .center
+            a.btn.btn-default.btn-big(href='meet-me.html') Harekete Geç!
+        // / .container
+        .bg.bg-color-neutral.opacity-50
+        // / .bg
+      // / .block
+      .block
+        .container
+          h2.center Daha Başarılı Bir Hayat İster Misin?
+          hr
+          h3.center Mail adresine gelecek toplantıya katıl ve nasıl olacağını öğren!
+          .row
+            .col-md-10.col-sm-10.col-md-offset-1.col-sm-offset-1
+              form#form-subscribe
+                .row
+                  .col-md-5
+                    .form-group
+                      input#name.form-control.framed(type='text' name='name' placeholder='İsmin')
+                  // / .col-md-5
+                  .col-md-5
+                    .form-group
+                      input#email.form-control.framed(type='email' name='email' placeholder='E-mail Adresin')
+                  // / .col-md-5
+                  .col-md-2
+                    .form-group
+                      button.btn.btn-primary.width-100(type='submit') Toplantıya Katıl
+                  // / .col-md-2
+                  .form-status
+                // / .row
+              // / form
+            // / .col-md-10
+          // / .row
+        // / .container
+        .bg.bg-color-neutral.opacity-20
+        // / .bg
+      // / .block
+      #make-an-appointment.block
+        .container
+          h2.center Özel Görüşme Ayarla
+          .row
+            .col-md-10.col-sm-10.col-md-offset-1.col-sm-offset-1
+              .calendar.big
+        // / .container
+        .bg
+        // / .bg
+      // / .block
+      hr
+      #successful-stories.block
+        .container
+          h2 Başarı Hikayelerimiz
+          .row
+            .col-md-6
+              .story
+                .image
+                  img(src='assets/images/amean_logo_main.png' alt='')
+                blockquote
+                  p
+                    | Aldığım danışmanlık sayesinde daha hırslı değil daha verimli çalıştım
+                    | Daha kısa süre çalışarak daha hızlı başarıya ulaştım
+                  footer Emin Kartcı
+                // / blockquote
+              // / .story
+            .col-md-6
+              .story
+                .image
+                  img(src='assets/images/semanurpp.png' alt='')
+                blockquote
+                  p
+                    | Zaman zaman motivasyonum düştüğünde görüşmeler 
+                    | sayesinde kendimi daha iyi hissettim.
+                  footer Semanur Sancar
+                // / blockquote
+              // / .story
+              
+        .bg
+        // / .bg
+      // / .block
+      #packages.block
+        .container
+          h2 Hizmetler
+          .pricing
+            .row
+              .col-md-3.col-sm-3
+                .description
+                  h3 Hizmetleri Keşfet
+                  ul
+                    li Birebir Danışmanlık
+                    li Çalışma Programı
+                    li Karakter Analizi
+                    li Özel Ders
+                    li Sınav Teknikleri
+                // / .price-box
+              // / .col-md-3
+              .col-md-3.col-sm-3
+                .price-box
+                  h3.center Gümüş
+                  ul
+                    li
+                      i.icon_check
+                    li
+                      i.icon_check
+                    li.not-available
+                      i.icon_close
+                    li 15 Ders
+                    li.not-available
+                      i.icon_close
+                  .price $59.90
+                  a.btn.btn-default(href='') Görüşme Ayarla
+                // / .price-box
+                aside.note.center
+                  | KDV Dahil Değildir
+              // / .col-md-3
+              .col-md-3.col-sm-3
+                .price-box.promoted
+                  .best-value Önerilen!
+                  h3.center Altın
+                  ul
+                    li
+                      i.icon_check
+                    li
+                      i.icon_check
+                    li
+                      i.icon_check
+                    li 30 Saat
+                    li.not-available
+                      i.icon_close
+                  .price $119.90
+                  a.btn.btn-primary.btn-white(href='') Randevu Al
+                // / .price-box
+                aside.note.center
+                  | KDV Dahil değildir
+              // / .col-md-3
+              .col-md-3.col-sm-3
+                .price-box.elmas
+                  .best-value-elmas
+                    img(src="assets/images/elmas.png", alt="", width="45px")
+                  h3.center Elmas
+                  ul
+                    li
+                      i.icon_check
+                    li
+                      i.icon_check
+                    li
+                      i.icon_check
+                    li Sınırsız
+                    li
+                      i.icon_check
+                  .price $229.90
+                  a.btn.btn-default(href='') Seni Arayalım
+                // / .price-box
+                aside.note.center
+                  | KDV Dahil değildir
+              // / .col-md-3
+            // / .row
+          // / .pricing
+        // / .container
+        .bg
+        // / .bg
+      // / .block
+    footer#footer
+      .container
+        .row
+          .col-md-8.col-sm-8
+            .left
+              span (C) 2021 Emin Kartcı - Amean Danışmanlık Tüm Hakları Saklıdır
+              .bg-left
+          .col-md-4.col-sm-4
+            .right
+              span
+                a.scroll(href='#top')
+                  | Başa Dön
+                  i.arrow_carrot-up_alt2
+              .bg-right
+                img(src='assets/img/footer-bg.png' alt='')
+      // / .container
+#modal.modal.fade
+  .modal-dialog
+    .modal-content
+      .modal-header
+        button.close(type='button' data-dismiss='modal' aria-label='Close')
+          span(aria-hidden='true') &times;
+        h2.modal-title Randevu Ayarla
+        h4 Tarih Belirle
+      .modal-body
+        .times
+          form
+            .btn-group(data-toggle='buttons')
+              label.btn.time-radio.active
+                input#option1(type='radio' name='options')
+                | 08:00
+                span Ulaşılabilir
+              label.btn.time-radio
+                input#option2(type='radio' name='options')
+                | 09:00
+                span Ulaşılabilir
+              label.btn.time-radio
+                input#option3(type='radio' name='options')
+                | 10:00
+                span Ulaşılabilir
+              label.btn.time-radio
+                input#option4(type='radio' name='options')
+                | 11:00
+                span Ulaşılabilir
+              label.btn.time-radio.not-available
+                input#option5(type='radio' name='options')
+                | 12:00
+                span Meşgul
+              label.btn.time-radio
+                input#option6(type='radio' name='options')
+                | 13:00
+                span Ulaşılabilir
+            .row
+              .col-md-6.col-sm-6
+                .form-group
+                  input.form-control.framed(type='text' name='modal-first-name' placeholder='İsim' required='')
+                // /.form-group
+              .col-md-6.col-sm-6
+                .form-group
+                  input.form-control.framed(type='text' name='modal-last-name' placeholder='Soyisim' required='')
+                // /.form-group
+              .col-md-6.col-sm-6
+                .form-group
+                  input.form-control.framed(type='email' name='modal-email' placeholder='E-mail' required='')
+                // /.form-group
+              .col-md-6.col-sm-6
+                .form-group
+                  input.form-control.framed(type='text' name='modal-number' placeholder='Numara' pattern='\d*' required='')
+                // /.form-group
+              .form-group
+                button#form-contact-submit.btn.pull-right.btn-primary(type='submit') Randevu Al
+              // /.form-group
+        // /.times
+      // /.modal-body
+    // /.modal-content
+  // /.modal-dialog
+// /.modal
+script(type='text/javascript' src='assets/js/jquery-2.1.4.min.js')
+script(type='text/javascript' src='assets/js/jquery-migrate-1.2.1.min.js')
+script(type='text/javascript' src='assets/bootstrap/js/bootstrap.min.js')
+script(type='text/javascript' src='assets/js/bootstrap-select.min.js')
+script(type='text/javascript' src='assets/js/zabuto_calendar.min.js')
+script(type='text/javascript' src='assets/js/jquery.validate.min.js')
+script(type='text/javascript' src='assets/revolution/js/jquery.themepunch.tools.min.js')
+script(type='text/javascript' src='assets/revolution/js/jquery.themepunch.revolution.min.js')
+script(type='text/javascript' src='assets/revolution/js/extensions/revolution.extension.video.min.js')
+script(type='text/javascript' src='assets/revolution/js/extensions/revolution.extension.slideanims.min.js')
+script(type='text/javascript' src='assets/revolution/js/extensions/revolution.extension.actions.min.js')
+script(type='text/javascript' src='assets/revolution/js/extensions/revolution.extension.layeranimation.min.js')
+script(type='text/javascript' src='assets/revolution/js/extensions/revolution.extension.kenburn.min.js')
+script(type='text/javascript' src='assets/revolution/js/extensions/revolution.extension.navigation.min.js')
+script(type='text/javascript' src='assets/revolution/js/extensions/revolution.extension.migration.min.js')
+script(type='text/javascript' src='assets/revolution/js/extensions/revolution.extension.parallax.min.js')
+script(type='text/javascript' src='assets/js/custom.js')
+script(type='text/javascript' src='assets/js/kayitol-popup.js')
+script(type='text/javascript' src='assets/js/giris_kayitol.js')
+//if lte IE 9
+  script(src='assets/js/ie.js')
