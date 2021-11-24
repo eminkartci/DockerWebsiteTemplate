@@ -25,6 +25,7 @@
     "bull": "^3.20.0",
     "connect-ensure-login": "^0.1.1",
     "connect-redis": "^5.0.0",
+    "consolidate": "^0.16.0",
     "cookie-parser": "^1.4.5",
     "cors": "^2.8.5",
     "express": "^4.17.1",

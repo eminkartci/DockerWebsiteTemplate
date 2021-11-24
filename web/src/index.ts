@@ -4,7 +4,6 @@ import helmet from "helmet";
 import cors from "cors";
 import path from "path";
 import redis from "redis";
-import fs from "fs";
 
 import methodOverride from "method-override";
 import cookieParser from "cookie-parser";
@@ -20,9 +19,11 @@ const PORT = process.env.PORT || 5001;
 
 //* APP
 const app = express();
+var engines = require('consolidate');
 app.set("trust proxy", 1);
-app.set("view engine", "pug");
 app.set("views", path.join(__dirname, "views"));
+app.engine('html', engines.mustache);
+app.set('view engine', 'html');
 app.use("/assets", express.static(path.join(__dirname, "assets")));
 
 //* Basic protection
@@ -70,7 +71,6 @@ if (dev) {
 //* App Start
 import sequelize from "./db";
 import authRouter, { passport, protect } from "./core/auth";
-import { DATE } from "sequelize/types";
 
 app.use(passport.initialize());
 app.use(passport.session());
@@ -79,11 +79,7 @@ app.use("/login", express.urlencoded({ extended: true }), authRouter);
 
 
 app.get("/",(req, res) => {
-	return res.render("anasayfa");
-});
-
-app.get("/anasayfa",(req, res) => {
-	return res.render("anasayfa");
+	return res.render("index");
 });
 
 
